@@ -6,16 +6,11 @@ public class SnakeAndLadder {
 		int position=0;
 		int number;
 		int option;
-
-		number=(int) (Math.floor(Math.random()*10)%6)+1;
-		System.out.println(number);
-		
-		option=(int) (Math.floor(Math.random()*10)%3);
-	    System.out.println(option);
-	    
-	    while(position!=100)
+		int discCount=0;
+		while(position!=100)
 		{
 		      number=(int) (Math.floor(Math.random()*10)%6);
+		      discCount++;
 		      System.out.println(number);
 		
 	       	  option=(int) (Math.floor(Math.random()*10)%3);
@@ -37,6 +32,6 @@ public class SnakeAndLadder {
 		     }
 		     System.out.println("Position = "+position);
 		}
+		System.out.println(discCount);
 	    }
-
 }
